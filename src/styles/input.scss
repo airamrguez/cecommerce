@@ -1,0 +1,18 @@
+.input {
+  height: 32px;
+  font-size: 1em;
+  color: #fff;
+  background: #424242 url('../assets/svg/search_line.svg') no-repeat left bottom;
+  outline: none;
+  border: none;
+  max-width: 450px;
+
+  caret-color: rgb(146, 201, 196);
+  flex: 1 1 auto;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+
+  &:hover {
+    background-color: #838383;
+  }
+}

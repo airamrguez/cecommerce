@@ -1,0 +1,70 @@
+@import "./mixins.scss";
+
+.product {
+  &.card {
+    background: #fff;
+    border-radius: 2px;
+    margin: 0.5rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    overflow: hidden;
+    min-height: 340px;
+    position: relative;
+
+    & .content {
+      padding: 1rem 1rem 0.5rem;
+    }
+
+    &:hover {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+  }
+
+  & .image {
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 180px; // just for testing
+    height: auto;
+    background: blue;
+  }
+
+  & .content {
+    & .title {
+      @include one-line;
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+
+    & .description {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    & p {
+      margin: 0;
+    }
+
+    &>div~div {
+      margin-top: 0.5rem;
+    }
+  }
+
+  & .footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: linear-gradient(0deg, #ccc, #ccc 50%, transparent 50%);
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-top: 2px;
+    position: absolute;
+    bottom: 4px;
+    left: 1em;
+    right: 1em;
+  }
+}

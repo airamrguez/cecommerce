@@ -1,0 +1,15 @@
+{
+  "products": [{
+      "id": 1,
+      "name": "Skynet",
+      "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit leo placerat magna, phasellus dui urna sociis nullam semper fringilla sollicitudin auctor, praesent vehicula laoreet convallis dis torquent",
+      "image": "https://images.unsplash.com/photo-1527430253228-e93688616381?ixlib=rb-1.2.1&auto=format&fit=crop&q=80&w=500"
+    },
+    {
+      "id": 2,
+      "name": "Robot-C",
+      "description": "Sociis fames class tristique potenti duis congue platea mus, interdum ornare curabitur iaculis convallis aliquet hac montes dui, maecenas nisi sollicitudin varius eget neque bibendum.",
+      "image": "https://images.unsplash.com/photo-1521405924368-64c5b84bec60?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+    }
+  ]
+}

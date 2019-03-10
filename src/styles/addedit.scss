@@ -1,0 +1,14 @@
+@import "./form.scss";
+
+.addedit {
+  & .header {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 1rem;
+  }
+
+  & .input {
+    width: 80vw;
+    max-width: 400px;
+  }
+}

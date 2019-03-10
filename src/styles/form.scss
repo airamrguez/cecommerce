@@ -1,0 +1,66 @@
+@import "./mixins.scss";
+@import "./input.scss";
+
+@mixin form-item {
+  padding: 1.5rem 1rem;
+}
+
+form {
+  & .field {
+    margin: 1rem;
+    border-radius: 6px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+  }
+
+  & .input {
+    @include form-item;
+
+    &:hover {
+      background-color: #838383;
+    }
+  }
+
+  & label.icon .input {
+    padding: 1em;
+    border-radius: 4px;
+  }
+
+  & label.icon {
+    font-size: 1.5em;
+    color: #a3a3a3;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    & ion-icon {
+      vertical-align: middle;
+    }
+  }
+
+  & .button-container {
+    @include form-item;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  & .hint {
+    color: #a3a3a3;
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 0.5rem;
+  }
+
+  & .error-message {
+    @include one-line;
+    text-align: center;
+    color: #c50909;
+    text-overflow: ellipsis;
+  }
+
+  // Preserve the space of error-message when is empty.
+  & .error-message:empty:after {
+    content: " ";
+    white-space: pre-wrap;
+  }
+}
